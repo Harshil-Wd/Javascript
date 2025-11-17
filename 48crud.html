@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Task : <input type="text"> <button onclick="test()">Add</button>
+    <ul></ul>
+    <script>
+       inp = document.querySelector("input")
+       btn = document.querySelector("button")
+       ul = document.querySelector("ul")
+       
+       function test(){
+        span = document.createElement("span")
+        li = document.createElement("li")
+       
+      span.innerHTML = inp.value
+        
+        dlt = document.createElement("button")
+        dlt.innerHTML = "delete"
+
+        edit = document.createElement("button")
+        edit.innerHTML = "edit"
+
+
+        ul.append(li)
+        li.append(span,dlt,edit)
+
+       dlt.addEventListener("click",function(){
+        li.remove()
+        })
+
+        edit.addEventListener("click",function(){
+       newtext = prompt("Enter value",span.innerHTML)
+       span.innerHTML = newtext
+        })
+
+       }
+
+       
+    </script>
+    
+</body>
+</html>
