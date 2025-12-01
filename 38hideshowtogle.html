@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, blanditiis!</p> 
+   <button onclick="test()">Hide</button>
+   <button onclick="test1()">Show</button>
+
+
+   <script>
+    p = document.querySelector('p')
+    function test(){
+p.style.display = "none"
+    }
+      function test1(){
+p.style.display = "block"
+    } -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quasi.</p>
+    <button onclick="test()">hide</button>
+
+    <script>
+        p = document.querySelector('p')
+        btn = document.querySelector('button')
+
+        function test(){
+            if(btn.innerHTML == "hide"){
+                p.style.display = 'none'
+                btn.innerHTML = 'show'
+            }
+            else{
+                p.style.display = "block"
+                btn.innerHTML = "hide"
+            }
+        }
+    </script>
+    
+   </script>
+</body>
+</html>
