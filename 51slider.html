@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="lampof.jpg" alt="" width="100px">
+    <script>
+        img = document.querySelector('img')
+        function test(){
+            if(img.src.match("lampof.jpg")){
+                img.src = "lampon.jpg"
+            }
+            else if(img.src.match("lampon.jpg")){
+                img.src = "lamp2.jpg"
+            }
+            else if(img.src.match("lamp2.jpg")){
+                img.src = "lamp3.jpg"
+            }
+            else{
+                img.src = "lampof.jpg"
+            }
+        }
+        setInterval(test,1000)
+        // test()
+    </script>
+</body>
+</html>

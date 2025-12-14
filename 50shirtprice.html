@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    shirt price : <p>500</p>
+    <select name="" id="" value="" onchange="test()">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>14</option>
+    </select>
+    <span></span>
+    
+
+    <script>
+        function test (){
+            p = document.querySelector("p")
+            select = document.querySelector("select")
+            span = document.querySelector("span")
+            span.innerHTML = p.innerHTML * select.value
+        }
+    </script>
+</body>
+</html>
